@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+ul li{
+    display: block;
+    
+}
+#txtn1, #txtn2{
+    margin-left: 2px;
+    margin-top:5px;
+}
+#visor{
+    height: 50px;
+    width: 173px;
+    background:grey;
+    border:solid black 2px;
+}
+.mais{
+    margin-left: 80px;
+}
+#submit{
+    margin-left:65px;
+    margin-top: 10px;
+}
+</style>
+<body>
+    <ul>
+        <li><div id="visor"></div></li>
+        <li><input type="number" id="txtn1" ></li>
+        <li class="mais">+</li>
+        <li><input type="number" id="txtn2" ></li>
+        <li><input type="submit" id="submit" onclick="submit()"></li>
+
+    </ul>
+        <script>
+            //função estava errada !
+            function submit(){
+                var tn1 = document.getElementById('txtn1') // campo input 1
+                var tn2 = document.getElementById('txtn2') // campo input 2 
+                var n1 = Number(tn1.value) // conversao para numeros
+                var n2 = Number(tn2.value) //  conversao para numeros 
+                var total = n1 + n2 // a soma dos input
+                var visor = document.getElementById('visor')//tela ou visor que apareserá a soma de n1+n2
+                
+                visor.innerHTML = `A soma de ${n1} e ${n2} é igual a ${total}`// o que será impresso na tela
+
+    
+
+
+            }
+        //codigo tudo ok
+        </script>
+</body>
+</html>

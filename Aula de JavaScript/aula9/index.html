@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos do Dom</title>
+</head>
+<style>
+    body{
+        background: rgba(255, 255, 255, 0.938);
+    }
+    h1{
+        font-size: 42px;
+        color: black;
+        text-align: center;
+        
+    }
+    h1:hover{
+        color:red;
+        transition: 1s;
+        ]
+    }
+    p{
+        text-align: center;
+    }
+    button{
+        height: 50px;
+        width: 150px;
+        margin-left: 420px;
+        background: chartreuse;
+        border: none;
+        border-radius: 20px;
+        cursor:pointer;
+    }
+    button:hover{
+        background: olivedrab;
+    }
+    .inputs input{
+        position: relative;
+        display: block;
+    }
+    .inputs .visor{
+        margin-left:500px;
+        position: relative;
+    }
+    .inputs .escrever{
+        position: relative;
+        margin-left:500px;
+    }
+    .inputs .enviar{
+        position: relative;
+        margin-top: 25px;
+    }
+    .editando{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Árvore do DOM</h1>
+        <p id="paragrafo">aqui vamos modificar</p>
+        <button>botão</button>
+
+        <div class="inputs">
+            <p>tela</p>
+            <input type="text" class="visor">
+            <p>escreva</p>
+            <input type="text" class="escrever">
+            <button type="submit" class="enviar">botão</button>
+        </div>
+    </header>
+    <script>
+        // trocando backgroud com JS 
+        var corpo = window.document.body
+        corpo.style.background = 'grey'
+        //aprender como escrever em um input e mostrar em um visor
+        /*
+        var tela = window.document.getElementsByClassName('visor')
+        var teclado = window.document.getElementsByClassName('escrever')
+       teclado.document.write(tela.innerText)
+       */
+
+       //aula mesmo
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Está Escrito Assim!!' + p1.innerText)//sem formatação
+        //document.write('Está Escrito Assim!!' + p1.innerHTML)//com formatação html
+        p1.style.color = 'red'
+        //aprender a adicionar classe para usar no css
+        //p1.addClassName = 'editando'
+
+        var btn_input = document.getElementsByClassName('enviar')[0]
+        tbn_input.style.background = 'blue'
+    </script>
+</body>
+</html>
