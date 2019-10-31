@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laço de Repetição</title>
+</head>
+<style>
+#visor{
+    height: 35px;
+    width: 170px;
+    background: grey;
+    border: solid black 2px;
+}
+</style>
+<body>
+    <h1>Digite o numero de fatias de pizza</h1>
+    <input type="number" id="txtn">
+    <input type="button" onclick="enviar()" value="Enviar">
+
+    <script>
+      var tela = document.getElementById('visor')  
+      var txtn = document.getElementById('txtn')
+      var numero = Number(txtn.value)
+     
+    function enviar(){
+        while(numero <= 8){
+            document.write (` ${numero} fatia de pizza`)
+            numero++ ////////////////////------ LAÇO DE REPETIÇÃO-------//////////////////
+        }
+    }
+    
+    
+    </script>
+
+</body>
+</html>

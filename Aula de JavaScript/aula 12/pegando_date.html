@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pegando DATE-TIME</title>
+    <style>
+        #visor{
+            height: 500px;
+            width: 500px;
+            background: grey;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pegando DATE-TIME</h1>
+    <div id="visor"></div>
+
+
+    <script>
+    tela = document.getElementById('visor')
+
+    var dt = new Date()
+    var dia = dt.getDate()// dia
+    var mes = dt.getMonth()//mes
+    var ano = dt.getUTCFullYear()//ano
+    var diasemana = dt.getUTCDay()//dia da semana
+    var hr = dt.getUTCHours()//horas
+    var min = dt.getUTCMinutes()//minutos
+        //estudar o uso melhor do aray
+    //var semanas = new Arrray('domingo','segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira','sabado')
+    
+    tela.innerHTML = `<h2>DATE:${dia}/${mes}/${ano}</h2><br>A hora:<h2>${hr}:${min}</h2>`
+    //alert('Dia da Semana' semanas[diasemana])
+    
+
+    
+    
+    </script>
+</body>
+</html>

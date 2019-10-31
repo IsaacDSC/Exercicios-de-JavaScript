@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #visor{
+        height: 100px;
+        width: 300px;
+        border: solid black 2px;
+        background: grey;
+    }
+    #visorDate{
+        height: 100px;
+        width: 300px;
+        border: solid black 2px;
+        background: grey;
+    }
+</style>
+<body>
+    <div id="visor"></div>
+    <div id="visorDate"></div>
+    <script>
+        
+
+            var tela = document.getElementById('visor')//tela do dia em numero
+            var telaDate = document.getElementById('visorDate')//tela do dia escrito
+            var dt = new Date()//adicionando dt
+            var semana = dt.getDay()//pegando do dt o DIA
+            tela.innerHTML = `O dia da Semana é: ${semana}`
+            
+            switch(semana){
+                case 0:
+                    telaDate.innerHTML = `Hoje é Domingo`
+                    break
+                case 1:
+                telaDate.innerHTML = `hoje é Segunda-feira`
+                    break
+                case 2:
+                telaDate.innerHTML = `Hoje é Terça-feira`
+                    break
+                case 3:
+                telaDate.innerHTML = `Hoje é Quarta-feira`
+                    break
+                case 4:
+                telaDate.innerHTML = `Hoje é Quinta-feira`
+                    break
+                case 5:
+                telaDate.innerHTML = `Hoje é Sexta-feira`
+                    break
+                case 6:
+                telaDate.innerHTML = `Hoje é Sabado`
+                    break
+                default:
+                telaDate.innerHTML = `Dia Inválido`
+                    break
+            }
+    
+    
+    </script>
+</body>
+</html>

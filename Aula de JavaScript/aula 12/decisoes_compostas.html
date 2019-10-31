@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #visor{
+        height: 300px;
+            width: 300px;
+            background: grey;
+            margin-top: 20px;
+        
+    }
+    
+    </style>
+</head>
+
+<body>
+    <h1>Digite sua Idade:</h1>
+    <input type="number" id="input" >
+    <input type="button" value="enviar" onclick="submit()">
+    <div id="visor"></div>
+
+
+    <script>
+        
+
+        function submit(){
+            var txt = document.getElementById('input')
+            var idade = Number(txt.value)
+            var tela = document.getElementById('visor')
+
+           // document.write(idade)
+          if(idade >=16 && >= 65){
+              tela.innerHTML = `Voto opcional`
+          }
+           
+        }
+        
+    </script>
+</body>
+</html>
