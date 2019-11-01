@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha uma opção!</h1>
+       
+        <div class="buttonsFictions">
+                <div class="btnContando">
+                        <a href="#modalTabuada" class="btnContando">Contando</a>
+                </div>
+                <div class="btnTabuada">
+                    <a href="#modalTabuada">Tabuada</a>
+                </div>
+        </div>
+       
+
+    </header>
+    <article>
+        <div id="modalTabuada" class="modal-tabuada">
+            <a href="#fechar" class="fecharModal">Fechar</a>
+            <div class="containerOne">
+                <label for="">Início</label>
+                    <input type="number" id="txtn1">
+            </div>
+            <div class="containerTow">
+                <label for="">Fim</label>
+                <input type="number" id="txtn2">
+            </div>
+            <div class="containerThree">
+                <label for="">Passo</label>
+                <input type="number" id="txtn3">
+            </div>
+            <button onclick="enviar">Contar</button>
+            <div id="visor"></div>
+        </div>
+
+    </article>
+    <footer>
+        <h2>@CursoemVideo</h2>
+    </footer>
+
+    <script src="calculando.js"></script>
+</body>
+</html>

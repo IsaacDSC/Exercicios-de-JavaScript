@@ -1,0 +1,157 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: rgba(0, 110, 255, 0.699);
+}
+/*=============================HEADER========================================*/
+h1{
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 5%;
+}
+.buttonsFictions{
+    margin-left: 20px;
+    display: inline-block;
+}.buttonsFictions a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+    margin-left:20px;
+    top: 15px;
+}
+.btnContando{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.199) 2px;
+    background: rgba(255, 254, 254, 0.521);
+    cursor: pointer;
+    
+}
+.btnTabuada{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.199) 2px;
+    background: rgba(255, 254, 254, 0.521);
+    cursor: pointer;
+    
+}
+/*=============================MODAL==========================================*/
+
+.modal-tabuada{
+    position: fixed;
+    margin-top: 100px;
+    border:solid white 2px ;
+    height: 500px;
+    width: 40%;
+    background: white;
+    border-radius: 20px;
+    margin-left: 30%;
+    opacity: 0;
+}
+.modal-tabuada:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*
+.closeModal {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: relative;
+    left:98%;
+    text-align: center;
+    top: 00px;
+    width: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.closeModal:after {
+    content: "\d7";
+}
+
+.closeModal:hover {
+    background: #f00;
+}*/
+/*=============================ARTICLE========================================*/
+
+label{
+    font-family: monospace;
+    color: black;
+    font-size: 20px;
+    margin-left: 25%;
+}
+input{
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.199) 2px;
+}
+.containerOne{
+    position: relative;
+    margin-top: 20px;
+}
+.containerTow{
+    position: relative;
+    margin-top: 20px;
+}
+.containerThree{
+    position: relative;
+    margin-top: 20px;
+}
+.containerTow input{
+    position: relative;
+    margin-left: 33px;
+}
+.containerThree input{
+    position: relative;
+    margin-left: 12px;
+}
+article button{
+    height: 40px;
+    width: 90px;
+    border-radius: 6px;
+    margin-left: 35%;
+    margin-top: 60px;
+    background: brown;
+    cursor: pointer;
+    border: solid rgba(0, 0, 0, 0.199) 2px;
+}
+button:hover{
+    background:orangered;
+}
+h2{
+    position: relative;
+    text-align: center;
+    margin-top:50px;
+    color:white;
+    font-size: 26px;
+}
+#visor{
+   background: wheat;
+   height: 150px;
+   width: 400px;
+   margin-top: 50px;
+   margin-left: 10%;
+   border-radius: 20px;
+   color: orangered;
+   border: solid  rgba(0, 0, 0, 0.199) 2px;
+}
