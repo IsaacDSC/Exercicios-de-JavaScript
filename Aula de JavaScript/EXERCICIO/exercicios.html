@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicios JavaScript</title>
+    <link rel="stylesheet" href="styleExercicios.css">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript</h1>
+
+    </header>
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="exercicios.html">Home</a></li>
+                <li><a href="" onclick="abrirMenuExercicios()">Exercicios</a></li>
+            </ul>
+        </div>
+        <div class="pg-escura" id="modalNav">
+            <div id="modal-exerciciosJs">
+                <ul>
+                    <li><button id="exeContando" onclick="abrirContando()">Contando</button></li>
+                    <li><button id="exeTabuada">Tabuada</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="apresentacao">
+
+
+    </section>
+    <section>
+        <div class="parte-escura" id="modalCompleta">
+            <div id="modalContando" class="modalContando">
+                <span class="close" onclick="fecharContando()">&times;</span>
+                <h2>Contando</h2>
+                <hr>
+                <ul>
+                    <li><input type="number" id=""></li>
+                    <li><input type="number"></li>
+                    <li><input type="number"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="contando.js"></script>
+</body>
+
+</html>
