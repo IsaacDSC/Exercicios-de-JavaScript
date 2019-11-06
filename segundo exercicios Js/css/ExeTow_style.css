@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+body{
+    background: rgba(6, 122, 231, 0.747);
+}
+section{
+    margin-top: 50px;
+    background: white;
+    height: 500px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20px;
+}
+p{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+section ul li{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    
+}
+section ul{
+    top: 30px;
+    margin-left: 100px;
+}
+button{
+    margin-left: 50%;
+    height: 50px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.795);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background: rgb(116, 15, 15);
+    color: white;
+}
+#idade{
+    height: 30px;
+    border-radius: 5px;
+}

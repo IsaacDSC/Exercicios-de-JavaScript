@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ExeTow_style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercicio JavaScript</h1>
+    </header>
+    <section>
+        <ul>
+            <li><label for="">Ano de Nascimento:</label></li>
+            <li><input type="number" name="" id="idade"></li>
+            <br>
+            <li><label for="">Sexo</label></li>
+            <br>
+            <li><input type="radio"  name="Sexo" id="homem" checked></li>
+            <label for="">Masculino</label>
+            <li><input type="radio"  name="Sexo" id="mulher"></li>
+            <label for="">Femenino</label>
+            <br>
+            <li><button onclick="verificar()">Verificar</button></li>
+        </ul>
+        <div id="visor"></div>
+    </section>
+    <footer>
+        <p>&copy;Cursoemvideo</p>
+    </footer>
+    <script>
+        function verificar(){
+            var idade = document.getElementById('idade')
+            var sexoM = document.getElementById('homem')
+            var sexoF = document.getElementById('mulher')
+            var tela = document.getElementById('visor')
+            var dt = new Date()
+            var data = dt.getDate
+            tela.innerHTML = data
+
+
+            switch(idade){
+
+            }
+            
+        }
+    </script>
+</body>
+</html>
