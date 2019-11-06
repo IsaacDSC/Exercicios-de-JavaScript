@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio:01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Primeiro Exercicios em JavaScript</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <section>
+        <div id="msg">
+            
+        </div>
+        <div class="imagem">
+            <img id="imagem" src="img/dia.png" width="350px" >
+        </div>
+    </section>
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+    <script>
+        function carregar(){
+            var msg = document.getElementById('msg')
+            var img  = document.getElementById('imagem')
+           // var dt = new Date()
+            //var hr = dt.getHours
+            var hr = 19
+            if(hr >=0 && hr<12){
+                msg.innerHTML = `<h2>Bom Dia!<h2>`
+                img.src = 'img/dia.png'
+                document.body.style.background = '#e2cd9f'
+            }else if(hr >=12 && hr <=18){
+                msg.innerHTML = `<h2>Boa Tarde!</h2>`
+                img.src = `img/tarde.png`
+                document.body.style.background = '#b9846f'
+
+            }else{
+                    msg.innerHTML = `<h2>Boa Noite!</h2>`
+                    img.src = `img/noite.png`
+                    document.body.style.background = '#515154'
+                }
+                
+        }
+    </script>
+</body>
+</html>
