@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <ul>
+            <li><label for="">Numero</label></li>
+            <li><input type="text" name="" id="numero"></li>
+            <li><button onclick="enviar()">Enviar</button></li>
+        </ul>
+        <hr>
+        
+        <div id="tela">
+
+        </div>
+    </section>
+    <script>
+    function enviar(){
+        //adicionando tela onde irá imprimir o resultado !
+        var tela = document.querySelector("#tela")
+        //adicionando variavel recebida do imput 
+        var n = document.querySelector("#numero").value
+        //adicionado arrays 
+        let num = [5,3,8]
+        //adicionando array via imput
+        num.push(n)
+        //adicionando quantidade de algaritmos dentro do array
+        var algaritmos = num.length 
+        // para organizar os elementos em ordem crescente 
+        var numOrdem = num.sort()
+        //imprimindo na tela
+        tela.innerHTML = `foi adicionando o numero: ${n} dentro do Vetor: ${num}<br> Este array possui ${algaritmos} algaritimos <br>
+        Vetor organizado: ${numOrdem}
+        `
+    }
+    function add(){
+        //document.write('ok')
+    
+     let valores = [1, 5, 0, 9, 10, 77, 89]
+     for(let pos = 0; pos < valores; pos++){
+         document.write(`a posição ${pos} tem o valor ${valores[pos]}`)
+     }
+    
+    }
+    </script>
+</body>
+</html>
